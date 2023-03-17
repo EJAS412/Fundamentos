@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float capital,interes,tiempo,resultado;
+    cout <<"Colocar el capital prestado: ";
+    cin >>capital;
+    cout<<"Colocar la tasa de interes mensual del prestamo(ej: 0.10) : ";
+    cin >>interes;
+    cout <<"Colocar el tiempo del prestamo en meses: ";
+    cin >>tiempo;
+    resultado=(capital*interes*tiempo)+capital;
+    cout <<"El monto total a pagar es "<<resultado;
+    return 0;
+}
+
