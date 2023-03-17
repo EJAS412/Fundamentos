@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main()
+{   float a,b,c,d;
+    double x1,x2;
+    cout<<"Ingrese a: " ;
+    cin>> a;
+    cout<<"Ingrese b: " ;
+    cin>> b;
+    cout<<"Ingrese c: " ;
+    cin>> c;
+    if (a==0)
+        cout<<"No se puede"<<endl;
+    else
+    {    d=b*b-4*a*c;
+        if (d==0)
+            {
+                x1=-b/(2*a);
+                cout<<"La solucion es unica:  "<<x1<<endl;
+            }
+        else 
+            if (d<0)
+                cout<<"La solucion es imaginaria"<<endl;
+            else
+            {
+    
+                x1= (-b+sqrt(b*b-4*a*c))/(2*a);
+                x2= (-b-sqrt(b*b-4*a*c))/(2*a);
+                cout << "El resultado es: "<< x1 <<endl;
+                cout << "El resultado es: "<< x2 <<endl;
+   
+    }        }    
+    return 0;
+}       
