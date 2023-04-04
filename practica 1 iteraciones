@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+    int N,mayor,menor,Numeros;
+    float promedio,suma=0;
+    cout<<"Ingresar el numero de enteros positivos: ";
+    cin>>N;
+    cout<<"Ingrese los Numeros: ";
+    cin>>Numeros;
+    mayor=Numeros;
+    menor=Numeros;
+        
+    for (int i=1;i<N;i++)
+    {
+        cout<<"Ingrese los Numeros: ";
+        cin>>Numeros;
+        if (mayor<Numeros)
+            mayor=Numeros;
+        if (menor>Numeros)    
+            menor=Numeros;
+    }   
+    promedio=(suma+Numeros)/N;
+    cout<<"El promedio es: "<<promedio<<endl;
+    cout<<"El mayor es: "<<mayor<<endl;
+    cout<<"El menor es: "<<menor<<endl;
+    return 0;
+}
