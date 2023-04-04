@@ -16,7 +16,8 @@ int main()
         
     for (int i=1;i<N;i++)
     {
-        cout<<"Ingrese los Numeros: ";
+        suma=suma+Numeros;
+       cout<<"Ingrese los Numeros: ";
         cin>>Numeros;
         if (mayor<Numeros)
             mayor=Numeros;
